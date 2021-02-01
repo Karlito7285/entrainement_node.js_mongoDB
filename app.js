@@ -29,6 +29,10 @@ app.get('/',(req, res)=>{
     res.render('index')
 });
 
+//middleware
+const auth = require('./middleware/auth');
+app.use('/articles/add', auth);
+
 //Ecoute le serveur
 app.listen(7000,function(){
     console.log('Le serveur tourne sur le port 7000')

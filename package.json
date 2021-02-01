@@ -20,6 +20,7 @@
     "handlebars": "^4.7.6",
     "mongod": "^2.0.0",
     "mongoose": "^5.11.14",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
   }
 }
