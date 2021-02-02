@@ -16,10 +16,19 @@
                   <p>{{stripTags content}}</p>
                 </div>
               </div>
+              <!-- DELETE -->
+               <li class="list-group-item"><a href="{{this.id}}">
+                            <form action="{{_id}}/?_method=DELETE" method="post">
+                            <button type="submit" class="btn btn-danger btn-sm">Effacer</button>
+                            </form>
+                            </li>
             </div>
           </div>
           {{/each}}
   
+            
+            
+        </div>
         </div>
     </div>
   </section>
