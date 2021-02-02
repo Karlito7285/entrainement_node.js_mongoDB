@@ -1,4 +1,4 @@
-const Post = require("../database/models/articles");
+const Post = require("../models/series");
 const path = require('path');
 
 module.exports = (req, res)=>{

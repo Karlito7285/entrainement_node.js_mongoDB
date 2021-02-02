@@ -7,6 +7,6 @@ const serieSchema = new mongoose.Schema({
     image: String,
 });
 
-const article = mongoose.model('serie', serieSchema)
+const serie = mongoose.model('serie', serieSchema)
 
-module.exports = article
+module.exports = serie
