@@ -5,14 +5,14 @@ module.exports = (req, res)=>{
 
     const {image} = req.files
 
-    const uploadFile = path.resolve(__dirname,'..' ,'public/images-serie', image.name);
+    const uploadFile = path.resolve(__dirname,'..' ,'public/image-serie', image.name);
 
     image.mv(uploadFile,(error)=>{
 
         Post.create(
             {
                 ...req.body,
-                image:`/images-serie/${image.name}`
+                image:`/image-serie/${image.name}`
             }
             
             , (error, post)=>{

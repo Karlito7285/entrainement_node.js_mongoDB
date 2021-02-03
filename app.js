@@ -11,7 +11,7 @@ const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");
 const Handlebars = require('handlebars');
-const methodOverride = require('method-override') // Pour methode put et delete
+const methodOverride = require('method-override'); // Pour methode put et delete
 
 
 
