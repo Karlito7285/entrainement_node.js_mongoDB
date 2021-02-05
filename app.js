@@ -85,7 +85,7 @@ app.use('/add', auth);
 //renvoie la page index
 app.get('/',homePageController);
 //ajout de série
-app.get('/serie/:id', auth, articleSingle);
+app.get('/series/:id', auth, articleSingle);
 app.get('/add', serieAddController);
 
 //post

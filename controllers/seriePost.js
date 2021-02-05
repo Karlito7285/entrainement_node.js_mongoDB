@@ -12,7 +12,8 @@ module.exports = (req, res)=>{
         Post.create(
             {
                 ...req.body,
-                image:`/image-serie/${image.name}`
+                image:`/image-serie/${image.name}`,
+                
             }
             
             , (error, post)=>{

@@ -2,7 +2,7 @@ const Post = require("../models/series")
 
 module.exports = async(req,res)=>{
 
-    const serie = await Post.findById(req.params.id)
+    const series = await Post.findById(req.params.id)
     console.log(req.params);
-    res.render('series',{serie})
+    res.render('series',{series})
 };
